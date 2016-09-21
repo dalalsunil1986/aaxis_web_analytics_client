@@ -29,7 +29,7 @@ Inside the config folder (create one if there's none), add a js file and name it
 
 ```
 
-Create the "build.js" file to be used with Google Tag Manager. Perform the command below from the root of the repo.
+Create the "build.js" file to be used with Google Tag Manager. Perform the command below from the root of the repo. This will bundle the files inside "lib" folder together with the config.js. 
 
 ```sh
     webpack
