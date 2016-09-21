@@ -1,0 +1,21 @@
+{
+  "name": "aaxis_kinesis_tag_manager",
+  "version": "1.0.0",
+  "description": "A library to be used with GTM for page tracking.",
+  "main": "aaxis_tag_manager.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --minimize",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.x",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "uglify-js": "^2.7.0"   
+  },
+  "keywords": [
+    "AWS"
+  ],
+  "author": "Joel Capillo",
+  "license": "ISC"
+}
