@@ -5,12 +5,13 @@
   "main": "aaxis_tag_manager.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --minimize",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline"
   },
   "devDependencies": {
     "aws-sdk": "2.x",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
+    "glob": "^7.0.5",
     "uglify-js": "^2.7.0"   
   },
   "keywords": [

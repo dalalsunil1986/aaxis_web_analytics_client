@@ -37,6 +37,19 @@ Create the "build.js" file to be used with Google Tag Manager. Perform the comma
 
 After the command finished, you should see a javascript file named "build.js". This is the file to be used for GTM.
 
+
+## Run Unit Test
+
+From the root of the repo, perform the command below:
+
+```sh
+    npm test
+```
+
+Next open the Unit Test result here, http://localhost:8080/test/index.html
+
+
+
 ## GTM Implementation Example
 
 Create an account with Google Tag Manager.

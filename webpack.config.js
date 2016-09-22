@@ -1,10 +1,16 @@
 var plugins = [],
-webpack = require("webpack");
+webpack = require("webpack"),
+glob = require("glob"),
+minimize = process.argv.indexOf('--minimize') !== -1;
 
-plugins.push(new webpack.optimize.UglifyJsPlugin());
+if (minimize) {
+  plugins.push(new webpack.optimize.UglifyJsPlugin());
+}
 
 module.exports = {
+  devtool: 'inline-source-map',
   entry: {
+    test: glob.sync("./lib/tests/*spec.js"),
     build: [
        './lib/aaxis_tag_manager.js',
       './lib/aws_kinesis.js',
@@ -13,7 +19,8 @@ module.exports = {
     ]
   },
   output: {
-    filename: "build.js"
+    filename: '[name].js',
+    publicPath: '/'
   },
   plugins: plugins
 };
