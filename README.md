@@ -1,4 +1,4 @@
-# Aaxis Page Analytic Client Library
+# Web Page Analytic Client Library
 
 A web analytics Javascipt client library using AWS kinesis stream designed to be used with Google Tag Manager (GTM).
 
